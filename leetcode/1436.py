@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def destCity(self, paths: List[List[str]]) -> str:
         counts = {}
@@ -7,4 +9,10 @@ class Solution:
                 counts[end] = 0 
         for k, v in counts.items():
             if v == 0:
-                return k
+                return k 
+
+
+paths = [["B","C"],["D","B"],["C","A"]]
+
+s = Solution()
+print(s.destCity(paths))

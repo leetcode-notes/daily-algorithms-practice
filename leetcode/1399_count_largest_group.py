@@ -12,9 +12,8 @@ class Solution:
                 largest = v 
             elif v == largest:
                 count += 1 
-        return count 
-            
-    
+        return count
+
     def digitSum(self, num):
         n = str(num)
         total = 0

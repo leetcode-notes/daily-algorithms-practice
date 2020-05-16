@@ -10,5 +10,4 @@ class Solution:
                 a = False
             if ord(d) < ord(c):
                 b = False
-        return a or b
-            
+        return a or b           

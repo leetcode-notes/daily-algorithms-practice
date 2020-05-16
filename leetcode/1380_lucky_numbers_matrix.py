@@ -1,4 +1,4 @@
-from typing import List 
+from typing import List
 
 
 class Solution:
@@ -19,5 +19,4 @@ class Solution:
                 cur_num = matrix[i][j]
                 if cur_num == col_max[j] and cur_num == row_min[i]:
                     res.append(cur_num)
-        return res 
-                
+        return res               

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def arrangeWords(self, text) -> str:
         words = defaultdict(list)
@@ -16,6 +18,7 @@ class Solution:
             del words[length]
         res[0] = res[0].capitalize()
         return " ".join(w for w in res)
-            
+
+
 s = Solution()
 print(s.arrangeWords("keep calm and code on"))

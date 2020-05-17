@@ -31,3 +31,5 @@ class Solution:
 
 test1 = [["leetcode", "google", "facebook"], ["google", "microsoft"],
          ["google", "facebook"], ["google"], ["amazon"]]
+s = Solution()
+print(s.peopleIndexes(test1))

@@ -14,6 +14,7 @@ class Solution:
         if abs(a-b) > 1:
             return ""
         res = []
+        i = 0
         for i in range(min(len(digits), len(strs))):
             if len(digits) > len(strs):
                 res.append(digits[i])

@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": true,
+    "python.testing.cwd": "",
+    "python.linting.flake8CategorySeverity.E": "Warning",
+    "python.linting.flake8CategorySeverity.F": "Warning",
+    "python.linting.mypyCategorySeverity.error": "Warning",
+    "python.linting.mypyCategorySeverity.note": "Warning",
+    "python.linting.pycodestyleCategorySeverity.E": "Warning",
+    "python.linting.pylintCategorySeverity.convention": "Warning",
+    "python.linting.pylintCategorySeverity.error": "Warning",
+    "pyright.typeCheckingMode": "basic",
+    "typescript.implementationsCodeLens.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "pyright.useLibraryCodeForTypes": true,
+
+}

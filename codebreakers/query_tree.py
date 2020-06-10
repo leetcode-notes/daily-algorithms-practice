@@ -29,24 +29,29 @@ def resolveQueries(queries, string, root):
     queue = deque([])
     queue.append(root)
     lookup = generate_lookup(string)
+    print(queryDict)
     res = {}
     while queue:
         qlength = len(queue)
         for i in range(qlength):
             curNode = queue.popleft()
-            if curNode in queryDict:
-                count = solve(curNode, queryDict[curNode], lookup)
+            if curNode.val in queryDict:
+                count = solve(curNode, queryDict[curNode.val], lookup)
                 # store the result of solve
                 res[curNode.val] = count 
                 # remove after we have called solve
-                del queryDict[curNode]
+                del queryDict[curNode.val]
+            if curNode.left:
+                queue.append(curNode.left)
+            if curNode.right:
+                queue.append(curNode.right)
     return res 
 
 
 def generate_lookup(string):
     int_to_char = {}
-    for i in range(len(s)):
-        int_to_char[i+1] = s[i]
+    for i in range(len(string)):
+        int_to_char[i+1] = string[i]
     return int_to_char
 
 
@@ -68,6 +73,7 @@ def solve(startNode, char, lookup: Dict) -> int:
 
 
 # test 1
+'''
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
@@ -78,3 +84,26 @@ lookup = generate_lookup(s)
 print(lookup)
 query = [1, 'a']
 print(solve(root, 'a', lookup))
+'''
+
+'''
+    1
+ 2     3
+4  5  6  7
+
+"abacdaa"
+queries = [[2, c], [3, a]]
+For the query [2, c], expect count to be 1 (node 4 is 'c')
+For the query [3, a], expect count to be 3 (node 3 is 'a', and both children are 'a' according to the string)
+'''
+tree2 = Node(1)
+tree2.left = Node(2)
+tree2.right = Node(3)
+tree2.left.left = Node(4)
+tree2.left.right = Node(5)
+tree2.right.left = Node(6)
+tree2.right.right = Node(7)
+
+queries2 = [[2, 'c'], [3, 'a']]
+string2 = "abacdaa"
+print(resolveQueries(queries2, string2, tree2))

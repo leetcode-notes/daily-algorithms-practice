@@ -19,6 +19,29 @@ class Node:
         self.right = None
         self.val = val
 
+def resolveQueries(queries, string, root):
+    queryDict = {}
+    # store the queries with node as key
+    for query in queries:
+        node, char = query[0], query[1]
+        queryDict[node] = char 
+    # traverse the tree, whenever a node is in queryDict, run "solve"
+    queue = deque([])
+    queue.append(root)
+    lookup = generate_lookup(string)
+    res = {}
+    while queue:
+        qlength = len(queue)
+        for i in range(qlength):
+            curNode = queue.popleft()
+            if curNode in queryDict:
+                count = solve(curNode, queryDict[curNode], lookup)
+                # store the result of solve
+                res[curNode.val] = count 
+                # remove after we have called solve
+                del queryDict[curNode]
+    return res 
+
 
 def generate_lookup(string):
     int_to_char = {}

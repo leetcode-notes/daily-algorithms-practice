@@ -19,12 +19,13 @@ class Node:
         self.right = None
         self.val = val
 
+
 def resolveQueries(queries, string, root):
     queryDict = {}
     # store the queries with node as key
     for query in queries:
         node, char = query[0], query[1]
-        queryDict[node] = char 
+        queryDict[node] = char
     # traverse the tree, whenever a node is in queryDict, run "solve"
     queue = deque([])
     queue.append(root)
@@ -38,14 +39,14 @@ def resolveQueries(queries, string, root):
             if curNode.val in queryDict:
                 count = solve(curNode, queryDict[curNode.val], lookup)
                 # store the result of solve
-                res[curNode.val] = count 
+                res[curNode.val] = count
                 # remove after we have called solve
                 del queryDict[curNode.val]
             if curNode.left:
                 queue.append(curNode.left)
             if curNode.right:
                 queue.append(curNode.right)
-    return res 
+    return res
 
 
 def generate_lookup(string):
@@ -94,7 +95,8 @@ print(solve(root, 'a', lookup))
 "abacdaa"
 queries = [[2, c], [3, a]]
 For the query [2, c], expect count to be 1 (node 4 is 'c')
-For the query [3, a], expect count to be 3 (node 3 is 'a', and both children are 'a' according to the string)
+For the query [3, a], expect count to be 3 (node 3 is 'a'),
+ and both children are 'a' according to the string)
 '''
 tree2 = Node(1)
 tree2.left = Node(2)

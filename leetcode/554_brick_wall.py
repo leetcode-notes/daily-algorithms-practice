@@ -33,9 +33,9 @@ test2 = [[1], [1], [1]]
 
 '''
 Success
-Details 
-Runtime: 200 ms, faster than 51.07% of Python3 online submissions for Brick Wall.
-Memory Usage: 19 MB, less than 5.60% of Python3 online submissions for Brick Wall.
+Details
+Runtime: 200 ms, faster than 51.07% of Python3 online submissions...
+Memory Usage: 19 MB, less than 5.60% of Python3 online submissions...
 Next challenges:
 Max Points on a Line
 Rearrange String k Distance Apart

@@ -20,9 +20,9 @@ print(s.maxNumberOfBalloons(test2))
 
 '''
 Success
-Details 
-Runtime: 36 ms, faster than 47.88% of Python3 online submissions for Maximum Number of Balloons.
-Memory Usage: 13.8 MB, less than 59.16% of Python3 online submissions for Maximum Number of Balloons.
+Details
+Runtime: 36 ms, faster than 47.88%....
+Memory Usage: 13.8 MB, less than 59.16%...
 Next challenges:
 Sudoku Solver
 Split Concatenated Strings

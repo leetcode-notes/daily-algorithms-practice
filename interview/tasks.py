@@ -1,6 +1,7 @@
 from typing import List
 # Order a list of words by number of letters but maintain original order
-# I think this means primary sort by length, break ties by deferring to original order
+# I think this means primary sort by length,
+#  break ties by deferring to original order
 
 
 def stable_sort_words(word_list) -> List[str]:
@@ -80,3 +81,27 @@ class ConvertNumbers:
 # Implement a stack class
 
 # Stock buy
+
+
+class BuySellStocks:
+
+    def maxProfitOneTransaction(self, prices):
+        if len(prices) <= 1:
+            return 0
+        minPri, maxPro = prices[0], 0
+        for i in range(1, len(prices)):
+            minPri = min(minPri, prices[i])
+            maxPro = max(maxPro, prices[i]-minPri)
+        return maxPro
+
+    def maxProfitUnlimitedTrasactions(self, prices):
+        if not prices or len(prices) == 1:
+            return 0
+
+        profit = 0
+
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i-1]:
+                profit += prices[i] - prices[i-1]
+
+        return profit

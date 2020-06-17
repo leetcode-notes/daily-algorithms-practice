@@ -48,9 +48,9 @@ class Solution:
 
 '''
 Success
-Details 
-Runtime: 48 ms, faster than 74.51% of Python3 online submissions for Integer to Roman.
-Memory Usage: 13.8 MB, less than 61.77% of Python3 online submissions for Integer to Roman.
+Details
+Runtime: 48 ms, faster than 74.51% of Python3...
+Memory Usage: 13.8 MB, less than 61.77% of Python3...
 Next challenges:
 Roman to Integer
 Integer to English Words

@@ -7,7 +7,7 @@
     "python.linting.mypyCategorySeverity.error": "Warning",
     "python.linting.mypyCategorySeverity.note": "Warning",
     "python.linting.pycodestyleCategorySeverity.E": "Warning",
-    "python.linting.pylintCategorySeverity.convention": "Warning",
+    "python.linting.pylintCategorySeverity.convention": "Hint",
     "python.linting.pylintCategorySeverity.error": "Warning",
     "pyright.typeCheckingMode": "basic",
     "typescript.implementationsCodeLens.enabled": true,

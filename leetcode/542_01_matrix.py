@@ -38,9 +38,9 @@ class Solution:
 
 '''
 Success
-Details 
-Runtime: 992 ms, faster than 24.68% of Python3 online submissions for 01 Matrix.
-Memory Usage: 16.1 MB, less than 69.64% of Python3 online submissions for 01 Matrix.
+Details
+Runtime: 992 ms, faster than 24.68% of Python3
+Memory Usage: 16.1 MB, less than 69.64% of Python3
 Next challenges:
 Validate Binary Search Tree
 Shortest Distance from All Buildings

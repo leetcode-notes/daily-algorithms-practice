@@ -2,7 +2,8 @@ from typing import List
 
 
 class Solution:
-    def filterRestaurants(self, restaurants: List[List[int]], veganFriendly: int, maxPrice: int, maxDistance: int) -> List[int]:
+    def filterRestaurants(self, restaurants: List[List[int]], veganFriendly:
+                          int, maxPrice: int, maxDistance: int) -> List[int]:
         res = []
         if veganFriendly:
             c = [1]
@@ -30,9 +31,9 @@ print(s.filterRestaurants(restaurants, v, mp, md))
 
 '''
 Success
-Details 
-Runtime: 360 ms, faster than 83.54% of Python3 online submissions for Filter Restaurants by Vegan-Friendly, Price and Distance.
-Memory Usage: 22.6 MB, less than 30.49% of Python3 online submissions for Filter Restaurants by Vegan-Friendly, Price and Distance.
+Details
+Runtime: 360 ms, faster than 83.54% of Python3..
+Memory Usage: 22.6 MB, less than 30.49% of Python3...
 Next challenges:
 Array Nesting
 Available Captures for Rook

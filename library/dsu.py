@@ -1,9 +1,16 @@
+'''
+Union by rank with path compression O()
+O(m log* n), amortized to be O(log*n), where m is number of operations, n is number of elements
+'''
+
+
 class DSU:
     def __init__(self, n):
         self.par = list(range(n))
         self.rnk = [0] * n
 
     def find(self, x):
+        # path compression
         if self.par[x] != x:
             self.par[x] = self.find(self.par[x])
         return self.par[x]

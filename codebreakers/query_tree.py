@@ -34,7 +34,7 @@ def resolveQueries(queries, string, root):
     res = {}
     while queue:
         qlength = len(queue)
-        for i in range(qlength):
+        for _ in range(qlength):
             curNode = queue.popleft()
             if curNode.val in queryDict:
                 count = solve(curNode, queryDict[curNode.val], lookup)

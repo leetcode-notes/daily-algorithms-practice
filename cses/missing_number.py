@@ -5,9 +5,11 @@ def solve(n, nums):
     d = Counter(nums)
     for i in range(1, n+1):
         if i not in d:
-            return i
+            print(i)
+            return 
 
 
-n = int(input())
-nums = [int(i) for i in input().split(" ")]
-print(solve(n, nums))
+if __name__ == '__main__':
+    n = int(input())
+    nums = [int(i) for i in input().split(" ")]
+    solve(n, nums)

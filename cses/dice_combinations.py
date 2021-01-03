@@ -28,5 +28,5 @@ def diceSum(n):
     else:
         for i in range(1, 7):
             if i <= n:
-                total += diceSum(n-i)
-    return total
+                total += diceSum(n-i) % (10**9+7)
+    return total % (10**9+7)

@@ -6,7 +6,7 @@ def solve(n, nums):
     for i in range(1, n+1):
         if i not in d:
             print(i)
-            return 
+            return
 
 
 if __name__ == '__main__':

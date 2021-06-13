@@ -31,13 +31,14 @@ class Solution:
         reverse_watched = defaultdict(list)
         for k, v in watched.items():
             reverse_watched[v].append(k)
-        max_watched = 2**10
+        max_watched = 0
         res = []
-        while max_watched > 0:
+        while max_watched < 2**10:
             if max_watched in reverse_watched:
                 res.extend(sorted(reverse_watched[max_watched]))
-            max_watched -= 1
+            max_watched += 1
         return res
+
 
   
 

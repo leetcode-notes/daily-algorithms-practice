@@ -7,7 +7,8 @@ class Solution:
 
         word_set = set(wordList)
 
-        queue = deque([(beginWord, 1)])
+        queue = deque()
+        queue.append((beginWord, 1))
         visited = set()
         alphabet = string.ascii_lowercase
         while queue:

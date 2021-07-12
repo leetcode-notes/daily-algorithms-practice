@@ -26,3 +26,14 @@ class Solution:
             for item in temp:
                 heapq.heappush(heap, item)
         return res
+
+
+"""
+Success
+Details 
+Runtime: 688 ms, faster than 16.38% of Python3 online submissions for Task Scheduler.
+Memory Usage: 14.8 MB, less than 50.29% of Python3 online submissions for Task Scheduler.
+Next challenges:
+Rearrange String k Distance Apart
+Show off your acceptance:
+"""
